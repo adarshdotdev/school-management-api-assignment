@@ -4,7 +4,7 @@
   "description": "A Node.js API for managing school locations and fetching nearby schools",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon index.js",
+    "dev": "nodemon server.js",
     "build": "npx prisma generate",
     "start": "node server.js"
   },
