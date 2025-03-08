@@ -88,7 +88,7 @@ The server should now be running on `http://localhost:4000`.
 
 ### 2. List Schools
 
-**Endpoint:** `GET /listSchools?latitude=22.5726&longitude=88.3639`
+**Endpoint:** `GET /listSchools?lat=22.5726&lon=88.3639`
 
 **Response:**
 

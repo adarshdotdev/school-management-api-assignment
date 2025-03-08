@@ -9,7 +9,7 @@ dotenv.config();
 // middleware
 app.use(cors());
 app.use(express.json());
-app.use("/api/v1", shoolRoute);
+app.use("/", shoolRoute);
 
 app.get("/", (req, res) => {
   res.send(`
@@ -25,7 +25,8 @@ app.get("/", (req, res) => {
       <ul style="list-style-type: none; padding: 0; font-size: 16px; color: #2c3e50;">
         <li>🚀 <strong>POST /addSchool</strong> - Add a new school.</li>
         <li>📍 <strong>GET /listSchools?lat=YOUR_LAT&lon=YOUR_LON</strong> - 
-            Get a list of schools sorted by distance.</li>
+            Get a list of schools sorted by distance.
+            <p>example:http://localhost:4000/listSchools?lat=22.5726&lon=88.3639</p></li>
       </ul>
       
       <p style="font-size: 16px; color: #7f8c8d;">

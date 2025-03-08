@@ -31,6 +31,7 @@ exports.addSchool = async (req, res) => {
 // http://localhost:4000/listSchools?la=22.5726&lon=88.3639
 
 exports.listSchools = async (req, res) => {
+  const { lat, lon } = req.query;
   if (!lat || !lon) {
     return res
       .status(400)
