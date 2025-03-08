@@ -1,5 +1,5 @@
 const express = require("express");
-const cors = require("cors");
+
 const shoolRoute = require("./routes/index.js");
 const dotenv = require("dotenv");
 const app = express();
@@ -7,7 +7,7 @@ const app = express();
 dotenv.config();
 
 // middleware
-app.use(cors());
+
 app.use(express.json());
 app.use("/", shoolRoute);
 
