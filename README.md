@@ -4,6 +4,8 @@
 
 This is a Node.js-based REST API that allows users to add schools and list them based on their proximity to a given location. The API uses **Prisma ORM** with **PostgreSQL** as the database and **Zod** for data validation.
 
+![Preview](preview.png)
+
 ## Features
 
 - **Add School**: Adds a school with name, address, latitude, and longitude.
